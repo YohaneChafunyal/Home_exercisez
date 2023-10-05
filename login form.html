@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contener">
+        <div class="formbox">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="field" id="namefield">
+                        <i class="fa-solid fa-envolope"></i>
+                       <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="field">
+                        <i class="fa-solid fa-envolope"></i>
+                       <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="field">
+                        <i class="fa-solid fa-envolope"></i>
+                       <input type="password" placeholder="Password">
+                    </div>
+                     <p>Lost password <a href="#">Click here</a></p>
+                </div>
+                <div class="btn">
+                    <button type="button" id="SignupBtn" class="disables">Sign Up</button>
+                    <button type="button" id="signin" class="disable">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script >  
+        let SignupBtn = document.getElementById("SignupBtn");
+        let signin = document.getElementById("signin");
+        let Signfield = document.getElementById("namefield");
+        let title = document.getElementById("title");
+        
+        signin.onclick = function()
+        {
+            namefield.style.maxHeight = "0";
+            title.innerHTML ="sign In"; //to change also the title
+
+            //To call a call once we click(color transition from sign up to sign in).
+            SignupBtn.classList.add("disable");//This remove the CSS declaration applied on button and add the declaration of disable class which is button. 
+            signin.classList.remove("disable");//This remove the CSS declaration of disable class and add the previous which is applied on button.
+            
+        }
+
+        SignupBtn.onclick = function()
+        {
+            namefield.style.maxHeight = "60px";
+            title.innerHTML ="sign Up";
+
+            //To call a call once we click(color transition from sign in to sign up).
+            SignupBtn.classList.remove("disable");
+            signin.classList.add("disable");
+         
+        } 
+    </script>
+    
+</body>
+</html>

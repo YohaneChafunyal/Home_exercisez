@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Multimedia.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>how to make video Multimedia</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="img/73638.jpg" width="100%">
+                    <!--  -->
+                    <img src="Download/play-circle.png" class="play-btn" onclick="playBtn('video/How To Make Video Gallery In HTML And CSS Website Step By Step Tutorial(720P_HD).mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                   <div class="smalle_img"> 
+                        <img src="img/istockphoto-1296681861-612x612.jpg" >
+                        <!-- <img src="Download/play-circle.png" class="play-btn"> -->
+                  </div>
+                   <p>How to add multiple video in a website ,<br>or to make a video gallery</p>
+                </div>
+                <div class="small-img-row">
+                   <div class="smalle_img"> 
+                        <img src="img/istockphoto-1296681861-612x612.jpg" >
+                    </div>
+                   <p>How to add multiple video in a website ,<br>or to make a video gallery</p>
+                </div>
+                <div class="small-img-row">
+                   <div class="smalle_img"> 
+                        <img src="img/istockphoto-1296681861-612x612.jpg" >
+                 </div>
+                   <p>How to add multiple video in a website ,<br>or to make a video gallery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="video/How To Make Video Gallery In HTML And CSS Website Step By Step Tutorial(720P_HD).mp4" type="video/mp4">
+        </video>
+        <img src="Download/cross.png" class="close-button" onclick="stopVideo()">
+    </div>
+    <!--  -->
+    <script>
+         var videoPlayer= document.getElementById("videoPlayer")
+         var myVideo= document.getElementById("myVideo")
+
+         function stopVideo(){
+            videoPlayer.style.display="none";
+
+         }
+         function playBtn(file){
+            myVideo.src = file;
+            videoPlayer.style.display="block";
+         }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.wrap{
+    /* to center our items */
+    min-width: 600px; 
+    width: 80%;
+    margin: auto;
+    /* ,,,,,,,,,,,,, */
+    background: green;/*this will be only 
+    be applying on the heading because
+     other element are undergoing a float declaration 
+     it takes them out of the class 
+     and the declaration will understand that 
+     there is no element below it*/
+    /* overflow: hidden; */
+
+} 
+
+.content,aside{
+    height: 300px;
+}
+.content{
+    background: #3e3e3e ;
+    float: left;/*this divise the screen and put aside the aside section*/
+    /* width: 450px;this difine the space wich must be use by the main section */
+    width: 60%;
+}
+
+aside{
+    background: goldenrod;
+    float: left;
+    width: 40%;
+}
+
+aside ul{
+    list-style: none;
+    padding-left: 0;
+}

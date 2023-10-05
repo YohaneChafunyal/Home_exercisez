@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function displayInput() //function will dsiplay a blue version of input.
+        {
+            var testInput = document.getElementById("name").value;
+
+            if (testInput.length == 0)
+            {
+
+                document.getElementById("para").innerHTML = "Hey, you didn't put nothing!";
+           
+            }
+
+
+            else
+               document.getElementById("para").innerHTML=testInput;
+        }
+
+    </script>
+</head>
+<body>
+    <h1 style="color: blue;">Let us see another button.</h1>
+    <input id="name" type="text" />
+    <button onclick="displayInput();">color It</button>
+
+    <p id="para" style="color:red;"></p>
+
+</body>
+</html>

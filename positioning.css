@@ -1,0 +1,39 @@
+.box{
+    width: 300px;
+    height: 200px;
+    border:1px solid red;
+    background-color: #666;
+    margin-bottom: 20px;
+}
+.box2{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border:1px solid red;
+    background-color: #666;
+    margin-bottom: 20px;
+}
+.box .relative{
+    width: 100px;
+    height: 100px;
+    border:1px solid red;
+    background-color: #5e15;
+    position: relative;
+    top: -10px;
+    left: 30px;
+    /* margin-bottom: 20px; */
+}
+.box2 .absolute{
+    width: 100px;
+    height: 100px;
+    border:1px solid red;
+    background-color: #5e15;
+    position: absolute;/*the absolute position place the element in relation to his parent and especially
+     is nearest parent if it is setting on a positioning declaration
+      as well*/
+    top: 0;
+    left: 0px;
+    /* margin-bottom: 20px; */
+}
+
+
